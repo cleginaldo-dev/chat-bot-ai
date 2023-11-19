@@ -49,7 +49,7 @@ export function Chat() {
           </ScrollArea>
         </CardContent>
         <CardFooter>
-          <form className="w-full flex gap-2" onSubmit={handleSubmit}>
+          <form className="w-full flex gap-2 flex-col" onSubmit={handleSubmit}>
           <Input placeholder="Como posso ajudar?" value={input} onChange={handleInputChange}/>
           <Button type="submit">Enviar</Button>
           </form>
