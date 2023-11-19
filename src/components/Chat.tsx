@@ -16,13 +16,14 @@ export function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
-    <Card className="w-[500px] grid grid-rows-[min-content_1fr_min-content]">
+    <div className="w-[900px] flex gap-2 flex-col">
+    <Card className="grid grid-rows-[min-content_1fr_min-content]">
         <CardHeader>
-          <CardTitle>Chat AI</CardTitle>
-          <CardDescription>Chat bot experimental</CardDescription>
+          <CardTitle>Chat IA</CardTitle>
+          <CardDescription>O que sabemos é uma gota, o que ignoramos é um oceano.</CardDescription>
         </CardHeader>
         <CardContent>
-          <ScrollArea className="h-[400px] w-full pr-4">
+          <ScrollArea className="h-[230px] w-full pr-4">
           {messages.map(message => {
             return (
               <div key={message.id} className="flex gap-3 text-slate-600 text-sm mb-4">
@@ -51,10 +52,14 @@ export function Chat() {
         <CardFooter>
           <form className="w-full flex gap-2 flex-col" onSubmit={handleSubmit}>
           <Input placeholder="Como posso ajudar?" value={input} onChange={handleInputChange}/>
-          <Button type="submit">Enviar</Button>
+          <Button className="size-sm" type="submit">Enviar</Button>
           </form>
         </CardFooter>
       </Card>
+        <p className="text-slate-600 text-sm text-center mt-10">
+        © 2023 Cleginaldo Bandeiras. Todos os direitos reservados.
+        </p>
+    </div>
   )
 }
 
