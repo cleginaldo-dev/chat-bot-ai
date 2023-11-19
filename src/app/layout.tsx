@@ -16,6 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
