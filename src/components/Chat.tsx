@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { useChat } from 'ai/react';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import userAvatar from "@/assets/avatar.png";
-import aiAvatar from "@/assets/ai_avatar.png";
+import aiAvatar from "@/assets/ai_avatar.gif";
 import Image from "next/image";
 
 
