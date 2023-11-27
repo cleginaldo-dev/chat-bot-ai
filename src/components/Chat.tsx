@@ -40,7 +40,7 @@ export function Chat() {
                 )}
               <p className="leading-relaxed">
                 <span className="block font-bold text-slate-700">
-                  {message.role === 'assistant' ? 'AI' : 'Você'}
+                  {message.role === 'assistant' ? 'Miss Minutes' : 'Você'}
                   </span>
                 {message.content}
               </p>
